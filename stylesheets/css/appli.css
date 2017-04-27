@@ -1,0 +1,14 @@
+body {
+    background-image: url("../../images/guitariste.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 20%;
+    padding-left: 20%;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
