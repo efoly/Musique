@@ -1,14 +1,63 @@
 body {
-    background-image: url("../../images/guitariste.jpg");
-    background-size: 100%;
+    background-image: url('../../images/guitariste.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    padding-top: 20%;
-    padding-left: 20%;
+}
+
+main {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+footer {
+    margin-bottom: 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: red;
+    text-decoration: none;
 }
 
 .container {
     width: 980px;
     margin: 0 auto;
     vertical-align: middle;
+}
+
+.banner-element {
+    float: left;
+    width: 20%;
+    position: relative;
+    /*On enlève ce qui dépasse pour les images*/
+    overflow: hidden;
+    height: 150px;
+}
+
+.banner-element-lien a {
+    position: absolute;
+    top: 5px;
+    color: #93b5ed;
+}
+
+.banner-element-lien a:hover {
+    background-color: white;
+    color: green;
+    text-decoration: underline;
+}
+.banner-element-lien a:visited {
+    background-color: white;
+    color: #e58475;
+    text-decoration: underline;
+}
+
+.banner-element-img {
+    max-width: 100%;
+    max-height: 100%;
 }
