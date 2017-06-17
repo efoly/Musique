@@ -1,8 +1,8 @@
 body {
-    background-image: url('../../images/guitariste.jpg');
+    background-image: url('../images/musique.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: black;
 }
 
 main {
@@ -11,13 +11,14 @@ main {
     overflow: auto;
 }
 
-footer {
-    margin-bottom: 0px;
-}
-
 a {
     color: white;
     text-decoration: none;
+}
+
+footer {
+    margin-bottom: 0;
+    position: fixed;
 }
 
 nav a:visited {
@@ -33,7 +34,6 @@ nav a:visited {
 
 .banner-element {
     float: left;
-    width: 20%;
     position: relative;
     /*On enlève ce qui dépasse pour les images*/
     overflow: hidden;
@@ -51,6 +51,7 @@ nav a:visited {
     color: green;
     text-decoration: underline;
 }
+
 .banner-element-lien a:visited {
     background-color: white;
     color: #e58475;
