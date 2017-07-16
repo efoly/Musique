@@ -11,54 +11,38 @@ main {
     overflow: auto;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
 footer {
     margin-bottom: 0;
     position: fixed;
 }
 
-nav a:visited {
-    color: red;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dee8f9;
+}
+
+li {
+    float: left;
+    display: inline;
+    border-right: 1px solid white;
+}
+
+li a {
+    display: block;
+    color: #538def;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-.container {
-    width: 980px;
-    margin: 0 auto;
-    vertical-align: middle;
+/* Change la couleur du lien en #c0d4f7 (bleu clair) lors du passage de la souris */
+li a:hover {
+    background-color: #c0d4f7;
 }
 
-.banner-element {
-    float: left;
-    position: relative;
-    /*On enlève ce qui dépasse pour les images*/
-    overflow: hidden;
-    height: 150px;
-}
-
-.banner-element-lien a {
-    position: absolute;
-    top: 5px;
-    color: #93b5ed;
-}
-
-.banner-element-lien a:hover {
-    background-color: white;
-    color: green;
-    text-decoration: underline;
-}
-
-.banner-element-lien a:visited {
-    background-color: white;
-    color: #e58475;
-    text-decoration: underline;
-}
-
-.banner-element-img {
-    max-width: 100%;
-    max-height: 100%;
+table.pistes th, table.pistes td {
+    text-align: center;
 }

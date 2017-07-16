@@ -17,24 +17,23 @@ function getUsers() {
 function displayTable(users) {
 
     var table = '<table class="table table-striped">';
-    // on pointe sur la valeur du select
-    var roleChoisi = $('#filterRoles').val();
 
     // entête
-    table += "<tr><th>Email</th><th>Password</th><th>Role</th><th>Modifier</th><th>Supprimer</th></tr>";
+    table += "<tr><th>Nom</th><th>Prénom</th><th>Email</th><th>Password</th><th>Role</th><th>Modifier</th><th>Supprimer</th></tr>";
     
     // boucle
     users.forEach(function(user) {
-        
-        // alors on affiche la ligne concernée
+
         table += '<tr>';
+        table += '<td>' + user.nom + '</td>';
+        table += '<td>' + user.prenom + '</td>';
         table += '<td>' + user.email + '</td>';
         table += '<td>' + user.password + '</td>';
         table += '<td>' + user.role + '</td>';
-        table += '<td><a class="btn btn-primary btn-xs" href="updateUser.php?id=' + user.id + '">Modifier</a></td>';
-        table += '<td><a class="btn btn-danger btn-xs" href="deleteUser.php?id=' + user.id + '">Supprimer</a></td>';
+        table += '<td><a href="updateUser.php?id=' + user.id + '"><button class="btn btn-success btn-xs">Modifier !</button></a></td>';
+        table += '<td><a href="deleteUser.php?id=' + user.id + '"><button class="btn btn-danger btn-xs">Supprimer !</button></a></td>';
         table += '</tr>';
-        
+
     });
 
     table += '</table>';
@@ -49,11 +48,14 @@ function hideUsers(rolefiltre) {
         // de nouvelles capacités (proppriétés et méthodes)
         var r = $(row); // r est "plus riche" en fonctionnalités que row
 
-        var role = r.children().eq(2).text();
+        var role = r.children().eq(4).text();
         
         if(role != rolefiltre && index != 0) {
+
             r.hide();
+
         } else {
+            
             r.show();
             
         }

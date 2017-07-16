@@ -13,15 +13,19 @@
 
     $menus_admins = [
         ['href' => 'index.php', 'label' => 'Accueil'],
-        ['href' => 'genres.php', 'label' => 'Genres'],
-        ['href' => 'utilisateurs.php', 'label' => 'Utilisateurs']
+        ['href' => 'genres.php', 'label' => 'Ecouter'],
+        ['href' => 'artists.php', 'label' => 'Actualiser/Supprimer un artiste'],
+        ['href' => 'addArtist.php', 'label' => 'Ajouter un artiste'],
+        ['href' => 'manageAlbums.php', 'label' => 'Gérer les albums'],
+        ['href' => 'manageTracks.php', 'label' => 'Gérer les titres'],
+        ['href' => 'utilisateurs.php', 'label' => 'Gérer les utilisateurs']
     ];
     
 
 ?>
 
 <nav>
-    <ul class="list-inline">
+    <ul>
 
         <?php
             if(!isLogged()) {

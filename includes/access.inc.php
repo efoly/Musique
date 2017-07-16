@@ -13,7 +13,7 @@ function getRole() {
 }
 
 function getAccount() {
-    return $_SESSION['user']['email'];
+    return $_SESSION['user']['prenom'] . ' ' . $_SESSION['user']['nom'];
 }
 
 ?>
